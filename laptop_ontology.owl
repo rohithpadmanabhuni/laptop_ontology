@@ -1,0 +1,1243 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rohith/ontologies/2021/6/laptop"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rohith/ontologies/2021/6/laptop">
+    <Prefix name="" IRI="http://www.semanticweb.org/rohith/ontologies/2021/6/laptop"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This ontology is about laptops for building a laptop recommender system.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#ACER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#APPLE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ASUS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Average_build_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Average_life_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Average_performance_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Build_quality_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casual_gaming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Content_creation_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DELL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fine_build_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gaming_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Good_build_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HDD_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heavy_Coding_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High_performance_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High_res"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediate_gaming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LENOVO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light_weight_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Long_life_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low_price_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MICROSOFT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MSI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium_price_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium_res"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium_weight_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multitasking_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performance_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professional_gaming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resolution_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SSD_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Starter_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storage_speed_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Travel_laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Very_high_res"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight_cls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#test"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAesthetics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBrand"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBuild"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCPU"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHDD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRAM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRefreshRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSSD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScreenSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTouchScreen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWarranty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ACER"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>Acer</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#APPLE"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>Apple</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ASUS"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>Asus</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Average_build_cls"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBuild"/>
+            <Literal>Average</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Average_life_cls"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasBatteryLifeTime"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasBatteryLifeTime"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Business_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_life_cls"/>
+            <Class IRI="#Good_build_cls"/>
+            <Class IRI="#Medium_weight_cls"/>
+            <ObjectUnionOf>
+                <Class IRI="#High_res"/>
+                <Class IRI="#Medium_res"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#Hybrid_cls"/>
+                <Class IRI="#SSD_cls"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Casual_gaming"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_performance_cls"/>
+            <ObjectUnionOf>
+                <Class IRI="#HDD_cls"/>
+                <Class IRI="#Hybrid_cls"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#High_res"/>
+                <Class IRI="#Medium_res"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#hasDedicatedGraphics"/>
+                    <Literal>AMD_Radeon_VEGA_Series</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasDedicatedGraphics"/>
+                    <Literal>NVIDIA_MX_series</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Content_creation_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#High_performance_cls"/>
+            <ObjectUnionOf>
+                <Class IRI="#Average_life_cls"/>
+                <Class IRI="#Long_life_cls"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#High_res"/>
+                <Class IRI="#Very_high_res"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DELL"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>Dell</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fine_build_cls"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBuild"/>
+            <Literal>Fine</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Good_build_cls"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBuild"/>
+            <Literal>Good</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HDD_cls"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasHDD"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:int"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HP"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>HP</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Heavy_Coding_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_performance_cls"/>
+            <ObjectUnionOf>
+                <Class IRI="#High_res"/>
+                <Class IRI="#Medium_res"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#Hybrid_cls"/>
+                <Class IRI="#SSD_cls"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#High_performance_cls"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasCPU"/>
+            <Literal>Intel_i7</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#High_res"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasResolution"/>
+            <Literal>1080P</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hybrid_cls"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasHDD"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasSSD"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">128</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Intermediate_gaming"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_performance_cls"/>
+            <ObjectUnionOf>
+                <Class IRI="#HDD_cls"/>
+                <Class IRI="#Hybrid_cls"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <Class IRI="#High_res"/>
+                <Class IRI="#Medium_res"/>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#hasDedicatedGraphics"/>
+                    <Literal>AMD_Radeon_RX_Series</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasDedicatedGraphics"/>
+                    <Literal>NVIDIA_GTX_series</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LENOVO"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>Lenovo</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Light_weight_cls"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasWeight"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:float"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Long_life_cls"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasBatteryLifeTime"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:int"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Low_price_cls"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasPrice"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasPrice"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">45000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MICROSOFT"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>Microsoft</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MSI"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasBrand"/>
+            <Literal>MSI</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Medium_price_cls"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasPrice"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">45001</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasPrice"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:int"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">70000</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Medium_res"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasResolution"/>
+            <Literal>720P</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Medium_weight_cls"/>
+        <ObjectIntersectionOf>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasWeight"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.5</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Multitasking_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_performance_cls"/>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#hasIntegratedGraphics"/>
+                    <Literal>HDGraphics</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasIntegratedGraphics"/>
+                    <Literal>Intel Iris</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasIntegratedGraphics"/>
+                    <Literal>Vega</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Professional_gaming"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#High_performance_cls"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasDedicatedGraphics"/>
+                <Literal>NVIDIA_RTX_20_Series</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SSD_cls"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasSSD"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:int"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Starter_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_life_cls"/>
+            <Class IRI="#Low_price_cls"/>
+            <ObjectUnionOf>
+                <Class IRI="#HDD_cls"/>
+                <Class IRI="#Hybrid_cls"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Student_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Average_life_cls"/>
+            <Class IRI="#Multitasking_laptop"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Travel_laptop"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Good_build_cls"/>
+            <Class IRI="#Light_weight_cls"/>
+            <Class IRI="#Long_life_cls"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Very_high_res"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasResolution"/>
+            <Literal>4K</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#test"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasCPU"/>
+            <Literal>Intel_i5</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ACER"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#APPLE"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ASUS"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Average_build_cls"/>
+        <Class IRI="#Build_quality_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Average_life_cls"/>
+        <Class IRI="#Battery_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Average_performance_cls"/>
+        <Class IRI="#Performance_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brand"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Build_quality_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Business_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casual_gaming"/>
+        <Class IRI="#Gaming_laptop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Content_creation_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DELL"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fine_build_cls"/>
+        <Class IRI="#Build_quality_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gaming_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Good_build_cls"/>
+        <Class IRI="#Build_quality_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HDD_cls"/>
+        <Class IRI="#Storage_speed_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HP"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heavy_Coding_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High_performance_cls"/>
+        <Class IRI="#Performance_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High_res"/>
+        <Class IRI="#Resolution_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid_cls"/>
+        <Class IRI="#Storage_speed_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediate_gaming"/>
+        <Class IRI="#Gaming_laptop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LENOVO"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light_weight_cls"/>
+        <Class IRI="#Weight_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Long_life_cls"/>
+        <Class IRI="#Battery_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low_price_cls"/>
+        <Class IRI="#Price_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MICROSOFT"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MSI"/>
+        <Class IRI="#Brand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium_price_cls"/>
+        <Class IRI="#Price_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium_res"/>
+        <Class IRI="#Resolution_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium_weight_cls"/>
+        <Class IRI="#Weight_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multitasking_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Price_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professional_gaming"/>
+        <Class IRI="#Gaming_laptop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resolution_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SSD_cls"/>
+        <Class IRI="#Storage_speed_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Starter_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storage_speed_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Travel_laptop"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Very_high_res"/>
+        <Class IRI="#Resolution_cls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight_cls"/>
+        <Class IRI="#Classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#test"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ACER"/>
+        <Class IRI="#APPLE"/>
+        <Class IRI="#ASUS"/>
+        <Class IRI="#DELL"/>
+        <Class IRI="#HP"/>
+        <Class IRI="#LENOVO"/>
+        <Class IRI="#MICROSOFT"/>
+        <Class IRI="#MSI"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HDD_cls"/>
+        <Class IRI="#SSD_cls"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#High_res"/>
+        <Class IRI="#Medium_res"/>
+        <Class IRI="#Very_high_res"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Light_weight_cls"/>
+        <Class IRI="#Medium_weight_cls"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>ACER</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>Intel_i5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>Classy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>Asus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>Good</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>Intel_i5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>NVIDIA_RTX_20_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">150000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal>4K</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAesthetics"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBrand"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBuild"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHDD"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOS"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRAM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasResolution"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSSD"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasScreenSize"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWarranty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAesthetics"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBrand"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBuild"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCPU"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHDD"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOS"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRAM"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRating"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasResolution"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSSD"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScreenSize"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWarranty"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWeight"/>
+        <Class IRI="#Laptop"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAesthetics"/>
+        <DataOneOf>
+            <Literal>Aggresive</Literal>
+            <Literal>Casual</Literal>
+            <Literal>Classy</Literal>
+            <Literal>Royal</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBrand"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBuild"/>
+        <DataOneOf>
+            <Literal>Average</Literal>
+            <Literal>Fine</Literal>
+            <Literal>Good</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCPU"/>
+        <DataOneOf>
+            <Literal>Intel_i5</Literal>
+            <Literal>Intel_i7</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <DataOneOf>
+            <Literal>AMD_Radeon_RX_Series</Literal>
+            <Literal>AMD_Radeon_VEGA_Series</Literal>
+            <Literal>NVIDIA_GTX_16_Series</Literal>
+            <Literal>NVIDIA_MX_Series</Literal>
+            <Literal>NVIDIA_RTX_20_Series</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHDD"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1024</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2048</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <DataOneOf>
+            <Literal>HDGraphics</Literal>
+            <Literal>Intel Iris</Literal>
+            <Literal>Vega</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOS"/>
+        <DataOneOf>
+            <Literal>Linux</Literal>
+            <Literal>Mac</Literal>
+            <Literal>Windows</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRAM"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRating"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">144</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasResolution"/>
+        <DataOneOf>
+            <Literal>1080P</Literal>
+            <Literal>4K</Literal>
+            <Literal>720P</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSSD"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1024</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">128</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">512</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScreenSize"/>
+        <DataOneOf>
+            <Literal>15.6inches</Literal>
+            <Literal>17.3inches</Literal>
+            <Literal>under 14inches</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWarranty"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBuild</IRI>
+        <Literal xml:lang="en">This property contains predefined build quality like Good, Average &amp; Fine which can be assigned to different laptops.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
