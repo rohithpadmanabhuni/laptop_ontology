@@ -460,6 +460,16 @@
             </ObjectIntersectionOf>
             <ObjectUnionOf>
                 <DataHasValue>
+                    <DataProperty IRI="#hasDedicatedGraphics"/>
+                    <Literal>AMD_Radeon_RX_Series</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#hasDedicatedGraphics"/>
+                    <Literal>NVIDIA_RTX_16_Series</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+            <ObjectUnionOf>
+                <DataHasValue>
                     <DataProperty IRI="#hasResolution"/>
                     <Literal>1080P</Literal>
                 </DataHasValue>
@@ -468,10 +478,6 @@
                     <Literal>4K</Literal>
                 </DataHasValue>
             </ObjectUnionOf>
-            <DataHasValue>
-                <DataProperty IRI="#hasDedicatedGraphics"/>
-                <Literal>AMD_Radeon_RX_Series</Literal>
-            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -2095,6 +2101,11 @@
         <DataProperty IRI="#hasDedicatedGraphics"/>
         <NamedIndividual IRI="#Macbook_Pro"/>
         <Literal>AMD_Radeon_RX_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">210000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasRAM"/>
