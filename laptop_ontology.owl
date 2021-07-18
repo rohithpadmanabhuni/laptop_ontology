@@ -104,9 +104,6 @@
         <Class IRI="#MICROSOFT"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MSI"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Medium_Resolution"/>
     </Declaration>
     <Declaration>
@@ -212,13 +209,40 @@
         <NamedIndividual IRI="#Acer_Nitro_5"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Dell_Latitude"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Macbook_Air"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#ACER"/>
@@ -245,7 +269,7 @@
         <Class IRI="#Average_build"/>
         <DataHasValue>
             <DataProperty IRI="#hasBuild"/>
-            <Literal>Average</Literal>
+            <Literal>durable aluminium</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -348,7 +372,7 @@
             </DataSomeValuesFrom>
             <DataHasValue>
                 <DataProperty IRI="#hasBuild"/>
-                <Literal>Good</Literal>
+                <Literal>aluminium</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -364,6 +388,10 @@
                     <DataHasValue>
                         <DataProperty IRI="#hasCPU"/>
                         <Literal>Intel i3</Literal>
+                    </DataHasValue>
+                    <DataHasValue>
+                        <DataProperty IRI="#hasCPU"/>
+                        <Literal>Intel i5</Literal>
                     </DataHasValue>
                 </ObjectUnionOf>
                 <DataSomeValuesFrom>
@@ -425,7 +453,7 @@
                     <DatatypeRestriction>
                         <Datatype abbreviatedIRI="xsd:int"/>
                         <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+                            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
                         </FacetRestriction>
                     </DatatypeRestriction>
                 </DataSomeValuesFrom>
@@ -440,6 +468,10 @@
                     <Literal>4K</Literal>
                 </DataHasValue>
             </ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hasDedicatedGraphics"/>
+                <Literal>AMD_Radeon_RX_Series</Literal>
+            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -453,14 +485,14 @@
         <Class IRI="#Fine_build"/>
         <DataHasValue>
             <DataProperty IRI="#hasBuild"/>
-            <Literal>Fine</Literal>
+            <Literal>durable plastic</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Good_build"/>
         <DataHasValue>
             <DataProperty IRI="#hasBuild"/>
-            <Literal>Good</Literal>
+            <Literal>durable plastic</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -660,13 +692,6 @@
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MSI"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasBrand"/>
-            <Literal>MSI</Literal>
-        </DataHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#Medium_Resolution"/>
         <DataHasValue>
             <DataProperty IRI="#hasResolution"/>
@@ -784,10 +809,6 @@
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
-            <DataHasValue>
-                <DataProperty IRI="#hasBuild"/>
-                <Literal>Fine</Literal>
-            </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -883,7 +904,7 @@
             </DataSomeValuesFrom>
             <DataHasValue>
                 <DataProperty IRI="#hasBuild"/>
-                <Literal>Average</Literal>
+                <Literal>cheap plastic</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -940,7 +961,7 @@
             </DataSomeValuesFrom>
             <DataHasValue>
                 <DataProperty IRI="#hasBuild"/>
-                <Literal>Fine</Literal>
+                <Literal>cheap plastic</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -1079,10 +1100,6 @@
         <Class IRI="#Brand"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MSI"/>
-        <Class IRI="#Brand"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Medium_Resolution"/>
         <Class IRI="#Resolution_cls"/>
     </SubClassOf>
@@ -1135,16 +1152,6 @@
         <Class IRI="#Classification"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#ACER"/>
-        <Class IRI="#APPLE"/>
-        <Class IRI="#ASUS"/>
-        <Class IRI="#DELL"/>
-        <Class IRI="#HP"/>
-        <Class IRI="#LENOVO"/>
-        <Class IRI="#MICROSOFT"/>
-        <Class IRI="#MSI"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#High_Resolution"/>
         <Class IRI="#Medium_Resolution"/>
         <Class IRI="#Very_High_Resolution"/>
@@ -1165,10 +1172,29 @@
         <Class IRI="#Laptop"/>
         <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>Casual</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasBrand"/>
         <NamedIndividual IRI="#Acer_Nitro_5"/>
-        <Literal>ACER</Literal>
+        <Literal>Acer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>durable plastic</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCPU"/>
@@ -1176,9 +1202,124 @@
         <Literal>Intel i5</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>NVIDIA_GTX_16_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">90000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasRAM"/>
         <NamedIndividual IRI="#Acer_Nitro_5"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>Futuristic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>Asus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>durable plastic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>Intel i5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>NVIDIA_MX_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">61990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">512</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.3</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAesthetics"/>
@@ -1203,7 +1344,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasBuild"/>
         <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
-        <Literal>Good</Literal>
+        <Literal>durable aluminium</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCPU"/>
@@ -1273,12 +1414,807 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasWeight"/>
         <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal>Dell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal>cheap plastic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal>AMD Ryzen 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal>Vega</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>Classy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>Dell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>AMD Ryzen 5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>Vega</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">66390</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">512</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal>Casual</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal>Dell</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal>aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal>Intel i3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">41750</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal>720P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>Casual</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>HP</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>cheap plastic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>Intel i3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>HDGraphics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">38700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>Futuristic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasBatteryLifeTime"/>
         <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>HP</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>AMD Ryzen 5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>NVIDIA_GTX_16_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">75293</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">144</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">256</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#HP_Pavilion_Gaming"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal>Casual</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal>Lenovo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal>cheap plastic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal>AMD Ryzen 3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasHDD"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal>Radeon R4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal>DOS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">30700</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>Classy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>Microsoft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>Pentium Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>HDGraphics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">48000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal>720P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">128</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.52</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>Classy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>Apple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>durable aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>Intel i5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>HDGraphics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>MacOS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">64999</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">144</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">128</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Macbook_Air"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.49</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>Futuristic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>Apple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>durable aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>Intel i9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>AMD_Radeon_RX_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">512</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>Classy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>Microsoft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>durable aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>Intel i5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>Intel Iris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">859990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal>4K</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">128</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.77</Literal>
     </DataPropertyAssertion>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasAesthetics"/>
@@ -1435,10 +2371,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasAesthetics"/>
         <DataOneOf>
-            <Literal>Aggresive</Literal>
             <Literal>Casual</Literal>
             <Literal>Classy</Literal>
-            <Literal>Royal</Literal>
+            <Literal>Futuristic</Literal>
+            <Literal>Modern</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1456,9 +2392,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasBuild"/>
         <DataOneOf>
-            <Literal>Average</Literal>
-            <Literal>Fine</Literal>
-            <Literal>Good</Literal>
+            <Literal>aluminium</Literal>
+            <Literal>cheap plastic</Literal>
+            <Literal>durable aluminium</Literal>
+            <Literal>durable plastic</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1474,6 +2411,7 @@
             <Literal>Intel i5</Literal>
             <Literal>Intel i7</Literal>
             <Literal>Intel i9</Literal>
+            <Literal>Pentium Gold</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1503,14 +2441,16 @@
         <DataOneOf>
             <Literal>HDGraphics</Literal>
             <Literal>Intel Iris</Literal>
+            <Literal>Radeon R4</Literal>
             <Literal>Vega</Literal>
         </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasOS"/>
         <DataOneOf>
+            <Literal>DOS</Literal>
             <Literal>Linux</Literal>
-            <Literal>Mac</Literal>
+            <Literal>MacOS</Literal>
             <Literal>Windows</Literal>
         </DataOneOf>
     </DataPropertyRange>
@@ -1558,6 +2498,7 @@
         <DataOneOf>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1024</Literal>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">128</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">256</Literal>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">512</Literal>
         </DataOneOf>
     </DataPropertyRange>
