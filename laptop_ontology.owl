@@ -26,7 +26,7 @@
         <Class IRI="#ASUS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Average_build"/>
+        <Class IRI="#Aluminium"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Average_life"/>
@@ -62,13 +62,7 @@
         <Class IRI="#DELL"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Fine_build"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Gaming_laptop"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Good_build"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HP"/>
@@ -119,6 +113,9 @@
         <Class IRI="#Performance_cls"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Plastic"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Price_cls"/>
     </Declaration>
     <Declaration>
@@ -164,9 +161,6 @@
         <DataProperty IRI="#hasDedicatedGraphics"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasECC"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasHDD"/>
     </Declaration>
     <Declaration>
@@ -210,6 +204,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
@@ -266,11 +263,17 @@
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Average_build"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasBuild"/>
-            <Literal>durable aluminium</Literal>
-        </DataHasValue>
+        <Class IRI="#Aluminium"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hasBuild"/>
+                <Literal>aluminium</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasBuild"/>
+                <Literal>durable aluminium</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Average_life"/>
@@ -485,20 +488,6 @@
         <DataHasValue>
             <DataProperty IRI="#hasBrand"/>
             <Literal>Dell</Literal>
-        </DataHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Fine_build"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasBuild"/>
-            <Literal>durable plastic</Literal>
-        </DataHasValue>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Good_build"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasBuild"/>
-            <Literal>durable plastic</Literal>
         </DataHasValue>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -818,6 +807,19 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#Plastic"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hasBuild"/>
+                <Literal>cheap plastic</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasBuild"/>
+                <Literal>durable plastic</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#Professional_gaming"/>
         <ObjectIntersectionOf>
             <ObjectIntersectionOf>
@@ -1014,7 +1016,7 @@
         <Class IRI="#Brand"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Average_build"/>
+        <Class IRI="#Aluminium"/>
         <Class IRI="#Build_quality_cls"/>
     </SubClassOf>
     <SubClassOf>
@@ -1054,16 +1056,8 @@
         <Class IRI="#Brand"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Fine_build"/>
-        <Class IRI="#Build_quality_cls"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Gaming_laptop"/>
         <Class IRI="#Category"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Good_build"/>
-        <Class IRI="#Build_quality_cls"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HP"/>
@@ -1126,6 +1120,10 @@
         <Class IRI="#Classification"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Plastic"/>
+        <Class IRI="#Build_quality_cls"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Price_cls"/>
         <Class IRI="#Classification"/>
     </SubClassOf>
@@ -1172,7 +1170,27 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
         <NamedIndividual IRI="#Asus_Zenbook_Flip_S"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Dell_Inspiron_3505"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Dell_Inspiron_7415"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Dell_Latitude"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#HP_15s_gr0011AU"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Laptop"/>
@@ -1180,7 +1198,23 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Lenovo_V145"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#MIcrosoft_Surface_Go"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
         <NamedIndividual IRI="#Macbook_Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laptop"/>
+        <NamedIndividual IRI="#Microsoft_Surface_Pro_7"/>
     </ClassAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAesthetics"/>
@@ -1190,7 +1224,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasBatteryLifeTime"/>
         <NamedIndividual IRI="#Acer_Nitro_5"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">7</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasBrand"/>
@@ -1225,7 +1259,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#Acer_Nitro_5"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">90000</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">62000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasRAM"/>
@@ -1236,6 +1270,21 @@
         <DataProperty IRI="#hasResolution"/>
         <NamedIndividual IRI="#Acer_Nitro_5"/>
         <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">256</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Acer_Nitro_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasWeight"/>
@@ -1326,6 +1375,96 @@
         <DataProperty IRI="#hasWeight"/>
         <NamedIndividual IRI="#Asus_TUF_Gaming_F15"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAesthetics"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>Futuristic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAntiReflectionScreen"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBatteryLifeTime"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBrand"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>Asus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBuild"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>durable aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCPU"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>Intel i7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDedicatedGraphics"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>NVIDIA_MX_Series</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIntegratedGraphics"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>Intel Iris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>Windows</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">999990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRAM"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRefreshRate"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasResolution"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal>1080P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSSD"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasScreenSize"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTouchScreen"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarranty"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#Asus_ZenBook_Duo_UX482_2021"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.62</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAesthetics"/>
@@ -2103,6 +2242,11 @@
         <Literal>AMD_Radeon_RX_Series</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasOS"/>
+        <NamedIndividual IRI="#Macbook_Pro"/>
+        <Literal>MacOS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#Macbook_Pro"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">210000</Literal>
@@ -2324,10 +2468,6 @@
         <Class IRI="#Laptop"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasECC"/>
-        <Class IRI="#Laptop"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasHDD"/>
         <Class IRI="#Laptop"/>
     </DataPropertyDomain>
@@ -2434,10 +2574,6 @@
             <Literal>NVIDIA_MX_Series</Literal>
             <Literal>NVIDIA_RTX_20_Series</Literal>
         </DataOneOf>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasECC"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasHDD"/>
